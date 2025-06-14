@@ -1,18 +1,19 @@
 package com.perpustakaan.main;
 import com.perpustakaan.controller.*;
+import com.perpustakaan.data.Users;
+
 
 import java.util.Scanner;
 
 public class Main {
-
+    static AuthController authController = new AuthController();
     public static void main(String[] args) {
         menuAwal();
-
     }
+
 
     public static void menuAwal() {
         Scanner input = new Scanner(System.in);
-        AuthController control = new AuthController();
 
         System.out.println("1. Login Member");
         System.out.println("2. Daftar");
@@ -23,12 +24,13 @@ public class Main {
 
         switch (pilih) {
             case 1:
+                // login member
                 System.out.println("masukkan nama: ");
                 String nama = input.nextLine();
                 System.out.println("masukkan Password");
                 String Password = input.nextLine();
 
-                control.Login(nama, Password);
+                authController.Login(nama, Password,false);
                 break;
             case 2:
                 System.out.println("Masukkan nama: ");
@@ -36,16 +38,17 @@ public class Main {
                 System.out.println("Masukkan Password: ");
                 String password = input.nextLine();
 
-                control.Register(Username, password);
+                authController.Register(Username, password);
                 menuAwal();
                 break;
             case 3:
+                // login admin
                 System.out.println("Masukkan nama: ");
                 String AdminNama = input.nextLine();
                 System.out.println("masukkan passwrod: ");
                 String AdminPassword = input.nextLine();
 
-                control.Login(AdminNama, AdminPassword);
+                authController.Login(AdminNama, AdminPassword,true);
         }
     }
 }

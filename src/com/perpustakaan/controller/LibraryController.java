@@ -1,0 +1,27 @@
+package com.perpustakaan.controller;
+import com.perpustakaan.data.*;
+import java.util.Scanner;
+
+import java.util.ArrayList;
+
+public class LibraryController {
+   static ArrayList<Book> ListBook = new ArrayList<>();
+   static Scanner input = new Scanner(System.in);
+
+    public void LibryData(){
+        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
+        ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
+    }
+    public void TambahBuku(){
+        System.out.println("Nama Buku: ");
+        String NamaBuku = input.nextLine();
+        System.out.println("Masukkan id buku: ");
+        String IdBuku = input.nextLine();
+        System.out.println("Masukkan Nama Penulis: ");
+        String NamaPenulis = input.nextLine();
+
+        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis));
+    }
+
+
+}

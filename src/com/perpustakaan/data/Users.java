@@ -1,7 +1,12 @@
 package com.perpustakaan.data;
 
+import com.perpustakaan.controller.AuthController;
+
+import java.util.Scanner;
+
 public abstract class Users {
     private String Nama;
+    public Scanner input=new Scanner(System.in);
 
     public String getPassword() {
         return Password;
@@ -26,6 +31,6 @@ public abstract class Users {
         this.Password = Password;
     }
 
-    public abstract void TampilkanMenu();
-
+    public abstract void TampilkanMenu(AuthController auth);
+    public abstract void tampilkanInformasi();
 }
