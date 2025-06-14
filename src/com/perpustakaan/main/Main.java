@@ -6,6 +6,8 @@ import com.perpustakaan.data.Users;
 import java.util.Scanner;
 
 public class Main {
+
+    // Sodiq
     static AuthController authController = new AuthController();
     public static void main(String[] args) {
         menuAwal();
