@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/view/MenuView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/main/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
