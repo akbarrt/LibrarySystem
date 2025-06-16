@@ -15,19 +15,28 @@ public class Admin extends Users{
 
     @Override
     public void TampilkanMenu(AuthController auth) {
-        System.out.println("1. Tambahkan Buku");
-        System.out.println("2. Lihat Anggota");
-        System.out.println("3. Lihat Daftar Buku");
-        int pilih = input.nextInt();
-        input.nextLine();
+        int pilih;
+        do {
+            System.out.println("1. Tambahkan Buku");
+            System.out.println("2. Lihat Anggota");
+            System.out.println("3. Lihat Daftar Buku");
+            System.out.print("Pilihan Anda: ");
+            pilih = input.nextInt();
+            input.nextLine();
 
-        switch (pilih){
-            case 1:
-                break;
-            case 2:
-                auth.TampilkanAnggota();
-                break;
-        }
+            switch (pilih) {
+                case 1:
+                    controller.TambahBuku();
+
+                    break;
+                case 2:
+                    auth.TampilkanAnggota();
+                    break;
+                case 3:
+                    controller.LihatDaftarBuku();
+                    break;
+            }
+        }while(pilih != 0);
     }
 
 

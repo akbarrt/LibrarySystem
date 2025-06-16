@@ -8,14 +8,12 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class AuthController {
-    // nyimpen data user
     ArrayList<Users> users =  new ArrayList<>();
 
-    // login
     public void Login(String username,String password, boolean loginAdmin){
         users.add(new Admin("Admin402","2024"));
         users.add(new Member("Faris","402"));
-        users.add(new Member("Bagas","441"));
+        users.add(new Member("Adit","421"));
         users.add(new Member("Ariel","434"));
 
         for(Users user : users){
@@ -27,19 +25,22 @@ public class AuthController {
                 }
             }else if(!loginAdmin && user instanceof Member){
                 if (user.getNama().equalsIgnoreCase(username) && user.getPassword().equals(password)){
-                    System.out.println("login berhasil sebagai meber");
+                    System.out.println("login berhasil sebagai Member");
                     ((Member) user).TampilkanMenu(this);
                 }
+            }else{
+                System.out.println("Data yang dimasukkan tidak valid!!!");
+
             }
         }
 
 
     }
-    // register
+
     public void Register(String Username, String Password){
         for(Users user: users){
             if(!(user instanceof Member) && user.getNama().equalsIgnoreCase(Username)){
-                System.out.println("nama sudah dipakai");
+                System.out.println("Nama sudah dipakai");
                 break;
             }
         }
