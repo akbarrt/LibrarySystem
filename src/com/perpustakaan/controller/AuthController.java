@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class AuthController {
     // nyimpen data user
+    private LibraryController Library;
     ArrayList<Users> users =  new ArrayList<>();
 
     // login
@@ -22,13 +23,13 @@ public class AuthController {
             if(loginAdmin && user instanceof Admin){
                 if(user.getNama().equals(username) && user.getPassword().equals(password)){
                     System.out.println("login berhasil sebagai admin");
-                    ((Admin) user).TampilkanMenu(this);
+                    ((Admin) user).TampilkanMenu(this, Library);
                     break;
                 }
             }else if(!loginAdmin && user instanceof Member){
                 if (user.getNama().equalsIgnoreCase(username) && user.getPassword().equals(password)){
                     System.out.println("login berhasil sebagai meber");
-                    ((Member) user).TampilkanMenu(this);
+                    ((Member) user).TampilkanMenu(this, Library);
                 }
             }
         }
@@ -54,5 +55,8 @@ public class AuthController {
                 user.tampilkanInformasi();
             }
         }
+    }
+    public void setLibrary(LibraryController Library){
+        this.Library = Library;
     }
 }

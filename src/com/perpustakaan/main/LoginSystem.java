@@ -1,14 +1,16 @@
 package com.perpustakaan.main;
 import com.perpustakaan.controller.*;
-import com.perpustakaan.data.Users;
 
 
 import java.util.Scanner;
 
 // Adit
-public class Main {
+public class LoginSystem {
     static AuthController authController = new AuthController();
+    static LibraryController Library =new LibraryController();
     public static void main(String[] args) {
+        authController.setLibrary(Library);
+        Library.LibryData();
         menuAwal();
     }
 

@@ -14,7 +14,7 @@ public class Admin extends Users{
     }
 
     @Override
-    public void TampilkanMenu(AuthController auth) {
+    public void TampilkanMenu(AuthController auth, LibraryController Library) {
         System.out.println("1. Tambahkan Buku");
         System.out.println("2. Lihat Anggota");
         System.out.println("3. Lihat Daftar Buku");
@@ -23,10 +23,13 @@ public class Admin extends Users{
 
         switch (pilih){
             case 1:
+                Library.TambahBuku();
                 break;
             case 2:
                 auth.TampilkanAnggota();
                 break;
+            case 3:
+                Library.LihatDaftarBuku();
         }
     }
 

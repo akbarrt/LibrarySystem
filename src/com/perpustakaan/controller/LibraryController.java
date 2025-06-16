@@ -9,8 +9,8 @@ public class LibraryController {
    static Scanner input = new Scanner(System.in);
 
     public void LibryData(){
-        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
-        ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
+        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang", 3));
+        //ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
 
 
     }
@@ -21,8 +21,10 @@ public class LibraryController {
         String IdBuku = input.nextLine();
         System.out.println("Masukkan Nama Penulis: ");
         String NamaPenulis = input.nextLine();
+        System.out.println("Stok buku: ");
+        int stok = input.nextInt();
 
-        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis));
+        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis, stok));
 
         System.out.println("Data Buku berhasil ditambahkan");
         System.out.println();
@@ -30,19 +32,31 @@ public class LibraryController {
     }
 
     public void LihatDaftarBuku(){
-        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
-        ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
-
         for(Book book: ListBook){
             System.out.println("  Buku    : " + book.getNamaBuku() +
                     "\n  ID buku : " + book.getIdBook() +
                     "\n  Penulis : " + book.getNamaPenulis() +
-                    "\n");
+                    "\n Stok: " + book.getStokBuku());
         }
 
     }
-    public void pinjamBuku(){
+    public boolean pinjamBuku(String IdBuku){
+        for(Book book : ListBook){
+            if(book.getIdBook().equals(IdBuku)){
+                if(book.getStokBuku() > 0){
+                    book.bookKurangiStok();
+                    System.out.println("buku berhasil di pinjam");
+                    return true;
+                }else{
+                    System.out.println("stok habis");
+                    return false;
 
+
+                }
+            }
+        }
+        System.out.println("buku dengan id tersbut tidak di temukan");
+        return false;
 
     }
 

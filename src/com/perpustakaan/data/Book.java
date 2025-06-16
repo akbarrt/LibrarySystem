@@ -2,8 +2,27 @@ package com.perpustakaan.data;
 
 import com.perpustakaan.Action.Action;
 
-public class Book implements Action {
+public class Book  {
     private String NamaBuku;
+    public int StokBuku;
+    private String NamaPenulis;
+    private String IdBook;
+
+    public Book(String namaBuku, String idBook, String NamaPenulis, int StokBuku) {
+        this.NamaBuku = namaBuku;
+        this.IdBook = idBook;
+        this.NamaPenulis = NamaPenulis;
+        this.StokBuku = StokBuku;
+    }
+
+    public int getStokBuku() {
+        return StokBuku;
+    }
+
+    public void setStokBuku(int stokBuku) {
+        StokBuku = stokBuku;
+    }
+
 
     public String getNamaBuku() {
         return NamaBuku;
@@ -29,22 +48,16 @@ public class Book implements Action {
         IdBook = idBook;
     }
 
-    private String NamaPenulis;
-
-    public Book(String namaBuku, String idBook, String NamaPenulis) {
-        this.NamaBuku = namaBuku;
-        this.IdBook = idBook;
-        this.NamaPenulis = NamaPenulis;
+    public void bookKurangiStok(){
+        if(StokBuku > 0){
+            StokBuku--;
+        }
+    }
+    public void tambahStok(){
+        StokBuku++;
     }
 
-    private String IdBook;
 
-
-
-    @Override
-    public void tampilkanMenu() {
-
-    }
 
 
 }
