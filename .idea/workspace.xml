@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed" />
+>>>>>>> 4d5aaae5c61b55d8f34c5751fa4c97988512c95c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Adit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,6 +56,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "Akbar",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -65,11 +70,16 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
+=======
+    "git-widget-placeholder": "Faris",
+    "kotlin-language-version-configured": "true"
+>>>>>>> 4d5aaae5c61b55d8f34c5751fa4c97988512c95c
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": []
   }
 }]]></component>
+<<<<<<< HEAD
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,6 +88,8 @@
       </set>
     </attachedChunks>
   </component>
+=======
+>>>>>>> 4d5aaae5c61b55d8f34c5751fa4c97988512c95c
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

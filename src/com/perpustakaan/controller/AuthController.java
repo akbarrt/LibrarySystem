@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class AuthController {
     // nyimpen data user
     ArrayList<Users> users =  new ArrayList<>();
-
+//m
     // login
     public void Login(String username,String password, boolean loginAdmin){
         users.add(new Admin("Admin402","2024"));

@@ -5,13 +5,19 @@ import com.perpustakaan.data.Users;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 public claMain {
+=======
+// Adit
+public class Main {
+>>>>>>> 4d5aaae5c61b55d8f34c5751fa4c97988512c95c
     static AuthController authController = new AuthController();
     public static void main(String[] args) {
         menuAwal();
     }
 
 
+    //tampilna awal
     public static void menuAwal() {
         Scanner input = new Scanner(System.in);
 
