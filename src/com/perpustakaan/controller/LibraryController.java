@@ -25,6 +25,7 @@ public class LibraryController {
         ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis));
 
         System.out.println("Data Buku berhasil ditambahkan");
+        System.out.println();
 
     }
 
@@ -34,9 +35,9 @@ public class LibraryController {
 
         for(Book book: ListBook){
             System.out.println("  Buku    : " + book.getNamaBuku() +
-                                " ID buku : " + book.getIdBook() +
-                                " Penulis : " + book.getNamaPenulis());
-
+                    "\n  ID buku : " + book.getIdBook() +
+                    "\n  Penulis : " + book.getNamaPenulis() +
+                    "\n");
         }
 
     }

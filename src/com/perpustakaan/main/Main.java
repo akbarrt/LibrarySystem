@@ -26,15 +26,15 @@ public class Main {
         switch (pilih) {
             case 1:
                 // login member
-                System.out.println("Masukkan Nama: ");
+                System.out.println("Masukkan Nama Mahasiswa: ");
                 String nama = input.nextLine();
-                System.out.println("Masukkan Password");
+                System.out.println("Masukkan NIM Mahasiswa: ");
                 String Password = input.nextLine();
 
                 authController.Login(nama, Password,false);
                 break;
             case 2:
-                System.out.println("Masukkan nama: ");
+                System.out.println("Masukkan Nama: ");
                 String Username = input.nextLine();
                 System.out.println("Masukkan Password: ");
                 String password = input.nextLine();
@@ -44,7 +44,7 @@ public class Main {
                 break;
             case 3:
                 // login admin
-                System.out.println("Masukkan nama: ");
+                System.out.println("Masukkan Username: ");
                 String AdminNama = input.nextLine();
                 System.out.println("Masukkan passwrod: ");
                 String AdminPassword = input.nextLine();

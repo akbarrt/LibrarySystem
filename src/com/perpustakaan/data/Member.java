@@ -23,7 +23,6 @@ public class Member extends Users{
                 case 1:
                     System.out.println("Meminjam Buku.");
                     library.LihatDaftarBuku();
-
                     break;
                 case 2:
                     System.out.println("Mengembalikan Buku");
