@@ -20,22 +20,22 @@ public class Main {
         System.out.println("1. Login Member");
         System.out.println("2. Daftar");
         System.out.println("3. Login Admin");
-        System.out.println("pilih opsi");
+        System.out.print("pilih opsi: ");
         int pilih = input.nextInt();
         input.nextLine();
 
         switch (pilih) {
             case 1:
                 // login member
-                System.out.println("masukkan nama: ");
+                System.out.println("Masukkan Nama Mahasiswa: ");
                 String nama = input.nextLine();
-                System.out.println("masukkan Password");
+                System.out.println("Masukkan NIM Mahasiswa: ");
                 String Password = input.nextLine();
 
                 authController.Login(nama, Password,false);
                 break;
             case 2:
-                System.out.println("Masukkan nama: ");
+                System.out.println("Masukkan Nama: ");
                 String Username = input.nextLine();
                 System.out.println("Masukkan Password: ");
                 String password = input.nextLine();
@@ -45,9 +45,9 @@ public class Main {
                 break;
             case 3:
                 // login admin
-                System.out.println("Masukkan nama: ");
+                System.out.println("Masukkan Username: ");
                 String AdminNama = input.nextLine();
-                System.out.println("masukkan passwrod: ");
+                System.out.println("Masukkan passwrod: ");
                 String AdminPassword = input.nextLine();
 
                 authController.Login(AdminNama, AdminPassword,true);

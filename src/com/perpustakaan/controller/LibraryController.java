@@ -11,6 +11,8 @@ public class LibraryController {
     public void LibryData(){
         ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
         ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
+
+
     }
     public void TambahBuku(){
         System.out.println("Nama Buku: ");
@@ -21,6 +23,27 @@ public class LibraryController {
         String NamaPenulis = input.nextLine();
 
         ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis));
+
+        System.out.println("Data Buku berhasil ditambahkan");
+        System.out.println();
+
+    }
+
+    public void LihatDaftarBuku(){
+        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
+        ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
+
+        for(Book book: ListBook){
+            System.out.println("  Buku    : " + book.getNamaBuku() +
+                    "\n  ID buku : " + book.getIdBook() +
+                    "\n  Penulis : " + book.getNamaPenulis() +
+                    "\n");
+        }
+
+    }
+    public void pinjamBuku(){
+
+
     }
 
 
