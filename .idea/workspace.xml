@@ -9,13 +9,13 @@
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/view/MenuView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,30 +57,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LoginSystem.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Akbar",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)"
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LoginSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Faris&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
->>>>>>> d5287b248e873a11bbb019cd092f32b37ce0a984
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: []
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
   }
-}</component>
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -124,6 +122,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
