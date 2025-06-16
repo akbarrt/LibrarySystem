@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed" />
+    <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Adit" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +57,7 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
@@ -53,11 +66,21 @@
     "git-widget-placeholder": "Akbar",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LoginSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Faris&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+>>>>>>> d5287b248e873a11bbb019cd092f32b37ce0a984
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": []
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: []
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

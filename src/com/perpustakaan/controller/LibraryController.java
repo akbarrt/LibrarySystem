@@ -9,9 +9,11 @@ public class LibraryController {
    static Scanner input = new Scanner(System.in);
 
     public void LibryData(){
-        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang"));
-        ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
+        ListBook.add(new Book("Laskar Pelangi", "B011", "Abang", 3));
+        ListBook.add(new Book("3726 MDPL", "b012", "Budi", 4));
+
     }
+
     public void TambahBuku(){
         System.out.println("Nama Buku: ");
         String NamaBuku = input.nextLine();
@@ -19,9 +21,54 @@ public class LibraryController {
         String IdBuku = input.nextLine();
         System.out.println("Masukkan Nama Penulis: ");
         String NamaPenulis = input.nextLine();
+        System.out.println("Stok buku: ");
+        int stok = input.nextInt();
 
-        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis));
+        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis, stok));
+
+        System.out.println("Data Buku berhasil ditambahkan");
+        System.out.println();
     }
 
+    public void LihatDaftarBuku(){
+        for(Book book: ListBook){
+            System.out.println("  Buku    : " + book.getNamaBuku() +
+                    "\n  ID buku : " + book.getIdBook() +
+                    "\n  Penulis : " + book.getNamaPenulis() +
+                    "\n Stok: " + book.getStokBuku());
+        }
+
+    }
+    public boolean pinjamBuku(String IdBuku){
+        if(ListBook.isEmpty()){
+            System.out.println("tidak ada data buku tersedia");
+        }
+        for(Book book : ListBook){
+            if(book.getIdBook().equals(IdBuku)){
+                if(book.getStokBuku() > 0){
+                    book.bookKurangiStok();
+                    System.out.println("buku berhasil di pinjam");
+                    return true;
+                }else{
+                    System.out.println("stok habis");
+                    return false;
+                }
+            }
+        }
+        System.out.println("buku dengan id tersbut tidak di temukan");
+        return false;
+
+    }
+
+    public void KembalikanBuku(String IdBuku){
+        for(Book buku : ListBook){
+            if(buku.getIdBook().equals(IdBuku)){
+                buku.tambahStok();
+                System.out.println("buku berhasil dikembalikan");
+                break;
+            }
+        }
+
+    }
 
 }
