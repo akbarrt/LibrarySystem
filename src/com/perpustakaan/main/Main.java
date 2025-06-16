@@ -13,6 +13,7 @@ public class Main {
     }
 
 
+    //tampilna awal
     public static void menuAwal() {
         Scanner input = new Scanner(System.in);
 
