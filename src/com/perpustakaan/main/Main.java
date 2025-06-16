@@ -9,8 +9,13 @@ import java.util.Scanner;
 public class Main {
 
     // Sodiq
-    static AuthController authController = new AuthController();
+    static AuthController auth = new AuthController();
+    static LibraryController libraryController = new LibraryController();
+
     public static void main(String[] args) {
+        libraryController.LibryData();
+        auth.Datalogin();
+        auth.setLibary(libraryController);
         menuAwal();
     }
 
@@ -29,30 +34,46 @@ public class Main {
         switch (pilih) {
             case 1:
                 // login member
-                System.out.println("masukkan nama: ");
-                String nama = input.nextLine();
-                System.out.println("masukkan Password");
-                String Password = input.nextLine();
+                boolean MemberBerhasil = false;
+                while (!MemberBerhasil) {
+                    System.out.println("masukkan nama: ");
+                    String nama = input.nextLine();
+                    System.out.println("masukkan Password");
+                    String Password = input.nextLine();
 
-                authController.Login(nama, Password,false);
+                    MemberBerhasil = auth.login(nama, Password, false);
+                    if (!MemberBerhasil) {
+                        System.out.println("Login gagal");
+                    }
+                }
                 break;
+
             case 2:
                 System.out.println("Masukkan nama: ");
                 String Username = input.nextLine();
                 System.out.println("Masukkan Password: ");
                 String password = input.nextLine();
 
-                authController.Register(Username, password);
+                auth.Register(Username, password);
                 menuAwal();
                 break;
             case 3:
                 // login admin
-                System.out.println("Masukkan nama: ");
-                String AdminNama = input.nextLine();
-                System.out.println("masukkan passwrod: ");
-                String AdminPassword = input.nextLine();
+                boolean BerhasilAdmin = false;
+                while (!BerhasilAdmin) {
+                    System.out.println("Masukkan nama: ");
+                    String AdminNama = input.nextLine();
+                    System.out.println("masukkan passwrod: ");
+                    String AdminPassword = input.nextLine();
 
-                authController.Login(AdminNama, AdminPassword,true);
+                    BerhasilAdmin = auth.login(AdminNama, AdminPassword, false);
+                    if (!BerhasilAdmin) {
+                        System.out.println("Username atau false salah");
+                    }
+                }
+                break;
+            default:
+                System.out.println("pilihan tidak valid");
         }
     }
 }

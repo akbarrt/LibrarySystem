@@ -1,0 +1,34 @@
+<changelist name="Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]" date="1750053047172" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 16/06/2025 12:50 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/AuthController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Book.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Book.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/Book.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/main/Main.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/main/Main.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/Admin.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Member.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/data/Member.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/Member.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" />
+    <option name="AFTER_PATH" value="out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_06_2025_12_50_[Changes]/LibraryController.class" />
+  </binary>
+</changelist>
