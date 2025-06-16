@@ -36,7 +36,6 @@ public class Member extends Users{
                         if(idBuku.equals(0)){
                             System.out.println("piminjaman buu di batalkan");
                             break;
-
                         }
                         pinjam = library.pinjamBuku(idBuku);
 
@@ -44,12 +43,18 @@ public class Member extends Users{
 
                     break;
                 case 2:
-                    System.out.println("Mengembalikan Buku");
+                    System.out.println("id buku yang dikembalikan: ");
+                    String IdBuku = input.nextLine();
+
+                    Library.KembalikanBuku(IdBuku);
+
                     break;
                 case 3:
                     LoginSystem.menuAwal();
 
                     break;
+                default:
+                    System.out.println("pilihan tidak valid");
             }
 
         }while(pilih != 0);

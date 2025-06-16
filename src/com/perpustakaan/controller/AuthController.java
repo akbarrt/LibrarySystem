@@ -12,29 +12,31 @@ public class AuthController {
     private LibraryController Library;
     ArrayList<Users> users =  new ArrayList<>();
 
-    // login
-    public void Login(String username,String password, boolean loginAdmin){
+    public void DataLogin(){
         users.add(new Admin("Admin402","2024"));
         users.add(new Member("Faris","402"));
         users.add(new Member("Bagas","441"));
         users.add(new Member("Ariel","434"));
+    }
 
+    // login
+    public boolean Login(String username,String password, boolean loginAdmin){
         for(Users user : users){
             if(loginAdmin && user instanceof Admin){
                 if(user.getNama().equals(username) && user.getPassword().equals(password)){
                     System.out.println("login berhasil sebagai admin");
                     ((Admin) user).TampilkanMenu(this, Library);
-                    break;
+                    return true;
                 }
             }else if(!loginAdmin && user instanceof Member){
                 if (user.getNama().equalsIgnoreCase(username) && user.getPassword().equals(password)){
                     System.out.println("login berhasil sebagai meber");
                     ((Member) user).TampilkanMenu(this, Library);
+                    return true;
                 }
             }
         }
-
-
+        return false;
     }
     // register
     public void Register(String Username, String Password){
@@ -58,5 +60,24 @@ public class AuthController {
     }
     public void setLibrary(LibraryController Library){
         this.Library = Library;
+    }
+
+    public void HapusAnggota(String Nama){
+        Iterator <Users> IteratorNamaHapus = users.iterator();
+        boolean ditemukan = false;
+
+        while (IteratorNamaHapus.hasNext()){
+            Users user =IteratorNamaHapus.next();
+            if(user instanceof Member && user.getNama().equalsIgnoreCase(Nama)){
+                IteratorNamaHapus.remove();
+                System.out.println("Anggota bernama " +Nama + " Berhasil dihapus");
+                ditemukan = true;
+                break;
+            }
+        }
+        if(!ditemukan){
+            System.out.println("Anggota dengan nama " + Nama + " tidak ada dalam database");
+        }
+
     }
 }
