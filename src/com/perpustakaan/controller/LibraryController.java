@@ -10,10 +10,10 @@ public class LibraryController {
 
     public void LibryData(){
         ListBook.add(new Book("Laskar Pelangi", "B011", "Abang", 3));
-        //ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
-
+        ListBook.add(new Book("3726 MDPL", "b012", "Budi", 4));
 
     }
+
     public void TambahBuku(){
         System.out.println("Nama Buku: ");
         String NamaBuku = input.nextLine();
@@ -28,7 +28,6 @@ public class LibraryController {
 
         System.out.println("Data Buku berhasil ditambahkan");
         System.out.println();
-
     }
 
     public void LihatDaftarBuku(){
@@ -41,6 +40,9 @@ public class LibraryController {
 
     }
     public boolean pinjamBuku(String IdBuku){
+        if(ListBook.isEmpty()){
+            System.out.println("tidak ada data buku tersedia");
+        }
         for(Book book : ListBook){
             if(book.getIdBook().equals(IdBuku)){
                 if(book.getStokBuku() > 0){
@@ -50,8 +52,6 @@ public class LibraryController {
                 }else{
                     System.out.println("stok habis");
                     return false;
-
-
                 }
             }
         }
@@ -60,5 +60,15 @@ public class LibraryController {
 
     }
 
+    public void KembalikanBuku(String IdBuku){
+        for(Book buku : ListBook){
+            if(buku.getIdBook().equals(IdBuku)){
+                buku.tambahStok();
+                System.out.println("buku berhasil dikembalikan");
+                break;
+            }
+        }
+
+    }
 
 }
