@@ -1,0 +1,46 @@
+Index: src/com/perpustakaan/controller/LibraryController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.perpustakaan.controller;\r\nimport com.perpustakaan.data.*;\r\nimport java.util.Scanner;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class LibraryController {\r\n   static ArrayList<Book> ListBook = new ArrayList<>();\r\n   static Scanner input = new Scanner(System.in);\r\n\r\n    public void LibryData(){\r\n        ListBook.add(new Book(\"Laskar Pelangi\", \"B011\", \"Abang\", 3));\r\n        //ListBook.add(new Book(\"3726 MDPL\", \"b012\", \"Budi\"));\r\n\r\n\r\n    }\r\n    public void TambahBuku(){\r\n        System.out.println(\"Nama Buku: \");\r\n        String NamaBuku = input.nextLine();\r\n        System.out.println(\"Masukkan id buku: \");\r\n        String IdBuku = input.nextLine();\r\n        System.out.println(\"Masukkan Nama Penulis: \");\r\n        String NamaPenulis = input.nextLine();\r\n        System.out.println(\"Stok buku: \");\r\n        int stok = input.nextInt();\r\n\r\n        ListBook.add(new Book(NamaBuku, IdBuku, NamaPenulis, stok));\r\n\r\n        System.out.println(\"Data Buku berhasil ditambahkan\");\r\n        System.out.println();\r\n\r\n    }\r\n\r\n    public void LihatDaftarBuku(){\r\n        for(Book book: ListBook){\r\n            System.out.println(\"  Buku    : \" + book.getNamaBuku() +\r\n                    \"\\n  ID buku : \" + book.getIdBook() +\r\n                    \"\\n  Penulis : \" + book.getNamaPenulis() +\r\n                    \"\\n Stok: \" + book.getStokBuku());\r\n        }\r\n\r\n    }\r\n    public boolean pinjamBuku(String IdBuku){\r\n        for(Book book : ListBook){\r\n            if(book.getIdBook().equals(IdBuku)){\r\n                if(book.getStokBuku() > 0){\r\n                    book.bookKurangiStok();\r\n                    System.out.println(\"buku berhasil di pinjam\");\r\n                    return true;\r\n                }else{\r\n                    System.out.println(\"stok habis\");\r\n                    return false;\r\n\r\n\r\n                }\r\n            }\r\n        }\r\n        System.out.println(\"buku dengan id tersbut tidak di temukan\");\r\n        return false;\r\n\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/perpustakaan/controller/LibraryController.java b/src/com/perpustakaan/controller/LibraryController.java
+--- a/src/com/perpustakaan/controller/LibraryController.java	(revision 9355c9222a1c1b1ae9f75f5a3292df970cac0363)
++++ b/src/com/perpustakaan/controller/LibraryController.java	(date 1750064028032)
+@@ -10,7 +10,7 @@
+ 
+     public void LibryData(){
+         ListBook.add(new Book("Laskar Pelangi", "B011", "Abang", 3));
+-        //ListBook.add(new Book("3726 MDPL", "b012", "Budi"));
++        ListBook.add(new Book("3726 MDPL", "b012", "Budi", 4));
+ 
+ 
+     }
+Index: src/com/perpustakaan/controller/AuthController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.perpustakaan.controller;\r\nimport com.perpustakaan.data.Admin;\r\nimport com.perpustakaan.data.Member;\r\nimport com.perpustakaan.data.Users;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.Iterator;\r\nimport java.util.Scanner;\r\n\r\npublic class AuthController {\r\n    // nyimpen data user\r\n    private LibraryController Library;\r\n    ArrayList<Users> users =  new ArrayList<>();\r\n\r\n    // login\r\n    public void Login(String username,String password, boolean loginAdmin){\r\n        users.add(new Admin(\"Admin402\",\"2024\"));\r\n        users.add(new Member(\"Faris\",\"402\"));\r\n        users.add(new Member(\"Bagas\",\"441\"));\r\n        users.add(new Member(\"Ariel\",\"434\"));\r\n\r\n        for(Users user : users){\r\n            if(loginAdmin && user instanceof Admin){\r\n                if(user.getNama().equals(username) && user.getPassword().equals(password)){\r\n                    System.out.println(\"login berhasil sebagai admin\");\r\n                    ((Admin) user).TampilkanMenu(this, Library);\r\n                    break;\r\n                }\r\n            }else if(!loginAdmin && user instanceof Member){\r\n                if (user.getNama().equalsIgnoreCase(username) && user.getPassword().equals(password)){\r\n                    System.out.println(\"login berhasil sebagai meber\");\r\n                    ((Member) user).TampilkanMenu(this, Library);\r\n                }\r\n            }\r\n        }\r\n\r\n\r\n    }\r\n    // register\r\n    public void Register(String Username, String Password){\r\n        for(Users user: users){\r\n            if(!(user instanceof Member) && user.getNama().equalsIgnoreCase(Username)){\r\n                System.out.println(\"nama sudah dipakai\");\r\n                break;\r\n            }\r\n        }\r\n        users.add(new Member(Username, Password));\r\n\r\n    }\r\n\r\n    // show member\r\n    public void TampilkanAnggota(){\r\n        for (Users user : users){\r\n            if(user instanceof Member){\r\n                user.tampilkanInformasi();\r\n            }\r\n        }\r\n    }\r\n    public void setLibrary(LibraryController Library){\r\n        this.Library = Library;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/perpustakaan/controller/AuthController.java b/src/com/perpustakaan/controller/AuthController.java
+--- a/src/com/perpustakaan/controller/AuthController.java	(revision 9355c9222a1c1b1ae9f75f5a3292df970cac0363)
++++ b/src/com/perpustakaan/controller/AuthController.java	(date 1750064983951)
+@@ -25,11 +25,16 @@
+                     System.out.println("login berhasil sebagai admin");
+                     ((Admin) user).TampilkanMenu(this, Library);
+                     break;
++                }else{
++                    System.out.println("nama atau password salah");
+                 }
+             }else if(!loginAdmin && user instanceof Member){
+                 if (user.getNama().equalsIgnoreCase(username) && user.getPassword().equals(password)){
+                     System.out.println("login berhasil sebagai meber");
+                     ((Member) user).TampilkanMenu(this, Library);
++                }else {
++                    System.out.println("nama atau password salah");
++
+                 }
+             }
+         }
