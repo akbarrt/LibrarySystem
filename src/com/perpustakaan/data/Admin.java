@@ -23,6 +23,7 @@ public class Admin extends Users{
 
         switch (pilih){
             case 1:
+                controller.TambahBuku();
                 break;
             case 2:
                 auth.TampilkanAnggota();

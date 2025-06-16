@@ -5,6 +5,7 @@ import com.perpustakaan.data.Users;
 
 import java.util.Scanner;
 
+// Adit
 public class Main {
 
     // Sodiq
@@ -14,6 +15,7 @@ public class Main {
     }
 
 
+    //tampilna awal
     public static void menuAwal() {
         Scanner input = new Scanner(System.in);
 
