@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312628bf-09ec-466b-87d5-9bc8d4ad396f" name="Changes" comment="ed">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAperpustakaan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TAperpustakaan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/Action/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/Action/Action.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/controller/LibraryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/data/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAperpustakaan/com/perpustakaan/main/LoginSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/controller/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/data/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perpustakaan/main/LoginSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Akbar" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,23 +55,40 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2wekGA2w1OZp7DiKOxXtmcmXgfp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LoginSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Faris&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LoginSystem.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: []
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
   }
-}</component>
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,6 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746409329891</updated>
+      <workItem from="1750163730604" duration="473000" />
     </task>
     <task id="LOCAL-00001" summary="ed">
       <option name="closed" value="true" />
@@ -114,6 +133,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

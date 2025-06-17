@@ -32,9 +32,9 @@ public class LoginSystem {
                 // login member
                 boolean MemberBerhasil = false;
                 while (!MemberBerhasil) {
-                    System.out.println("Masukkan Nama Mahasiswa: ");
+                    System.out.print("Masukkan Nama Mahasiswa: ");
                     String nama = input.nextLine();
-                    System.out.println("Masukkan NIM Mahasiswa: ");
+                    System.out.print("Masukkan NIM Mahasiswa: ");
                     String Password = input.nextLine();
 
                     MemberBerhasil = authController.Login(nama, Password, false);
@@ -45,9 +45,9 @@ public class LoginSystem {
                 break;
             case 2:
                 //register member
-                System.out.println("Masukkan Nama: ");
+                System.out.print("Masukkan Nama: ");
                 String Username = input.nextLine();
-                System.out.println("Masukkan Password: ");
+                System.out.print("Masukkan Password: ");
                 String password = input.nextLine();
 
                 authController.Register(Username, password);
@@ -57,9 +57,9 @@ public class LoginSystem {
                 // login admin
                 boolean BerhasilLoginAdmin = false;
                 while (!BerhasilLoginAdmin) {
-                    System.out.println("Masukkan Username: ");
+                    System.out.print("Masukkan Username: ");
                     String AdminNama = input.nextLine();
-                    System.out.println("Masukkan passwrod: ");
+                    System.out.print("Masukkan passwrod: ");
                     String AdminPassword = input.nextLine();
 
                     BerhasilLoginAdmin = authController.Login(AdminNama, AdminPassword, true);
